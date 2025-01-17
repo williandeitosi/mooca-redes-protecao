@@ -1,13 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import {
   CheckCircle,
   CreditCard,
   MapPin,
@@ -195,7 +188,7 @@ export default function Home() {
               Por Que a Mooca Redes de Proteção É a Escolha Certa?
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
-              <Carousel>
+              {/* <Carousel>
                 <CarouselContent>
                   <CarouselItem>...</CarouselItem>
                   <CarouselItem>...</CarouselItem>
@@ -203,7 +196,7 @@ export default function Home() {
                 </CarouselContent>
                 <CarouselPrevious />
                 <CarouselNext />
-              </Carousel>
+              </Carousel> */}
               <Card>
                 <CardContent className="p-6">
                   <CreditCard className="w-12 h-12 mb-4 text-primary" />
