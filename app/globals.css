@@ -5,32 +5,32 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 0 45% 23%;  /* #572121 */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 22% 96%;  /* #F5F0F0 */
+    --card-foreground: 0 45% 23%;
  
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 22% 96%;
+    --popover-foreground: 0 45% 23%;
  
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 0 45% 23%;     /* Seu vermelho base */
+    --primary-foreground: 0 22% 96%;
  
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 0 45% 37%;   /* #8B3535 */
+    --secondary-foreground: 0 22% 96%;
  
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 0 13% 57%;      /* #9C8989 */
+    --muted-foreground: 0 22% 96%;
  
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 30 35% 64%;    /* #C4A484 */
+    --accent-foreground: 0 45% 23%;
  
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 45% 46%; /* #AA4040 */
+    --destructive-foreground: 0 22% 96%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 0 13% 89%;     /* #E5DCDC */
+    --input: 0 13% 89%;
+    --ring: 0 45% 23%;
  
     --radius: 0.5rem;
   }
