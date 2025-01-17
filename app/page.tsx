@@ -4,7 +4,9 @@ import {
   CheckCircle,
   CreditCard,
   MapPin,
+  Phone,
   Shield,
+  Sparkles,
   PenToolIcon as Tool,
 } from "lucide-react";
 import Image from "next/image";
@@ -15,12 +17,15 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       <header className="bg-primary text-primary-foreground py-4">
         <div className="container mx-auto px-4">
-          <h1 className="text-2xl font-bold">Mooca Redes de Proteção</h1>
+          <h1 className="text-lg md:text-2xl font-semibold flex gap-3 items-center justify-center">
+            <Phone />
+            (11)96340-3041
+          </h1>
         </div>
       </header>
 
       <main className="flex-grow">
-        <section className="relative">
+        <section className="relative h-screen md:h-full">
           <Image
             src="/images/protecao-header.jpg"
             alt="image header"
@@ -28,25 +33,24 @@ export default function Home() {
             className="object-cover"
             priority
           />
-          {/* Overlay gradiente */}
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary-foreground/90" />
 
-          {/* Conteúdo */}
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/100 transition-opacity" />
+
           <div className="relative z-10 py-20">
-            <div className="container mx-auto px-4">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+            <div className="container  px-4   md:w-full">
+              <h1 className="text-xl md:text-5xl font-bold mb-4 text-white">
                 Proteção Garantida Para Janelas, Sacadas e Mais em São Paulo!
               </h1>
-              <p className="text-xl mb-6 text-white">
+              <p className="text-md md:text-xl mb-6 text-white">
                 Instalação rápida, segura e com pagamento facilitado. Atendemos
                 Mooca, Tatuapé, Perdizes e mais regiões da capital.
               </p>
-              <Button size="lg" className="mb-6">
+              <Button size="lg" className="mb-6 bg-green-700 py-6">
                 <Link href="https://wa.me/SEU_NUMERO_AQUI" target="_blank">
                   Peça um Orçamento Agora
                 </Link>
               </Button>
-              <ul className="space-y-2 text-white">
+              <ul className="space-y-2 text-white mt-8 md:mt-0">
                 <li className="flex items-center">
                   <CheckCircle className="mr-2" /> Redes de alta qualidade para
                   janelas, sacadas, piscinas, e quadras.
@@ -85,6 +89,14 @@ export default function Home() {
                     sacadas.
                   </p>
                 </CardContent>
+                <div className="relative w-full h-[200px]">
+                  <Image
+                    src="/images/crianca.jpg"
+                    alt="criança"
+                    fill
+                    className="object-cover rounded-t-lg"
+                  />
+                </div>
               </Card>
               <Card>
                 <CardContent className="p-6">
@@ -97,13 +109,7 @@ export default function Home() {
               </Card>
               <Card>
                 <CardContent className="p-6">
-                  <Image
-                    src="/placeholder.svg"
-                    alt="Estética"
-                    width={48}
-                    height={48}
-                    className="mb-4"
-                  />
+                  <Sparkles className="w-12 h-12 mb-4 text-primary" />
                   <h3 className="text-xl font-semibold mb-2">
                     Estética Preservada
                   </h3>
@@ -117,7 +123,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-muted py-20">
+        <section className="bg-zinc-200 py-20">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-4 text-center">
               Estamos Perto de Você!
@@ -145,7 +151,7 @@ export default function Home() {
               ))}
             </div>
             <div className="text-center">
-              <Button size="lg">
+              <Button size="lg" className=" bg-green-700 py-6">
                 <Link href="https://wa.me/SEU_NUMERO_AQUI" target="_blank">
                   Agende Agora Mesmo o Seu Atendimento!
                 </Link>
@@ -204,7 +210,11 @@ export default function Home() {
             <p className="text-xl mb-8">
               A segurança que sua família merece está a um clique de distância.
             </p>
-            <Button size="lg" variant="secondary" className="mb-8">
+            <Button
+              size="lg"
+              variant="secondary"
+              className="mb-8  bg-green-700 py-6"
+            >
               <Link href="https://wa.me/SEU_NUMERO_AQUI" target="_blank">
                 Solicite um Orçamento Agora!
               </Link>
@@ -230,7 +240,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="bg-muted py-6">
+      <footer className="bg-zinc-200 py-6">
         <div className="container mx-auto px-4 text-center">
           <p>
             &copy; 2025 Mooca Redes de Proteção. Todos os direitos reservados.
