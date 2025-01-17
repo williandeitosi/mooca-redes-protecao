@@ -1,6 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import {
   CheckCircle,
   CreditCard,
   MapPin,
@@ -27,7 +34,7 @@ export default function Home() {
       <main className="flex-grow">
         <section className="relative h-screen md:h-full">
           <Image
-            src="/images/protecao-header.jpg"
+            src="/images/estetica.jpg"
             alt="image header"
             fill
             className="object-cover"
@@ -37,31 +44,34 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-primary/100 transition-opacity" />
 
           <div className="relative z-10 py-20">
-            <div className="container  px-4   md:w-full">
-              <h1 className="text-xl md:text-5xl font-bold mb-4 text-white">
+            <div className="container  px-4 md:w-full">
+              <h1 className="text-2xl md:text-5xl font-bold mb-4 text-white">
                 Proteção Garantida Para Janelas, Sacadas e Mais em São Paulo!
               </h1>
               <p className="text-md md:text-xl mb-6 text-white">
                 Instalação rápida, segura e com pagamento facilitado. Atendemos
                 Mooca, Tatuapé, Perdizes e mais regiões da capital.
               </p>
-              <Button size="lg" className="mb-6 bg-green-700 py-6">
+              <Button
+                size="lg"
+                className="mb-6 bg-gradient-to-r from-green-400 to-green-500 text-white px-6 py-3 rounded-lg transform transition duration-300 hover:scale-105 shadow-[0_0_10px_2px_rgba(34,197,94,0.7)] hover:shadow-[0_0_20px_5px_rgba(34,197,94,0.8)] "
+              >
                 <Link href="https://wa.me/SEU_NUMERO_AQUI" target="_blank">
                   Peça um Orçamento Agora
                 </Link>
               </Button>
-              <ul className="space-y-2 text-white mt-8 md:mt-0">
+              <ul className="space-y-2 text-white mt-8 md:mt-0 text-md md:text-xl">
                 <li className="flex items-center">
-                  <CheckCircle className="mr-2" /> Redes de alta qualidade para
-                  janelas, sacadas, piscinas, e quadras.
+                  <CheckCircle className="mr-2 flex-shrink-0" /> Redes de alta
+                  qualidade para janelas, sacadas, piscinas, e quadras.
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="mr-2" /> Garantia de instalação segura
-                  e durável.
+                  <CheckCircle className="mr-2 flex-shrink-0" /> Garantia de
+                  instalação segura e durável.
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="mr-2" /> Atendimento ágil em toda a
-                  região de São Paulo.
+                  <CheckCircle className="mr-2 flex-shrink-0" /> Atendimento
+                  ágil em toda a região de São Paulo.
                 </li>
               </ul>
             </div>
@@ -94,7 +104,7 @@ export default function Home() {
                     src="/images/crianca.jpg"
                     alt="criança"
                     fill
-                    className="object-cover rounded-t-lg"
+                    className="object-cover rounded-lg"
                   />
                 </div>
               </Card>
@@ -106,6 +116,14 @@ export default function Home() {
                     Redes certificadas e resistentes às condições climáticas.
                   </p>
                 </CardContent>
+                <div className="relative w-full h-[200px]">
+                  <Image
+                    src="/images/durabilidade.jpg"
+                    alt="criança"
+                    fill
+                    className="object-cover rounded-lg"
+                  />
+                </div>
               </Card>
               <Card>
                 <CardContent className="p-6">
@@ -118,6 +136,14 @@ export default function Home() {
                     decoração.
                   </p>
                 </CardContent>
+                <div className="relative w-full h-[200px]">
+                  <Image
+                    src="/images/protecao-header.jpg"
+                    alt="criança"
+                    fill
+                    className="object-cover rounded-lg"
+                  />
+                </div>
               </Card>
             </div>
           </div>
@@ -151,7 +177,10 @@ export default function Home() {
               ))}
             </div>
             <div className="text-center">
-              <Button size="lg" className=" bg-green-700 py-6">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-green-400 to-green-500 text-white px-6 py-3 rounded-lg transform transition duration-300 hover:scale-105 shadow-[0_0_10px_2px_rgba(34,197,94,0.7)] hover:shadow-[0_0_20px_5px_rgba(34,197,94,0.8)]"
+              >
                 <Link href="https://wa.me/SEU_NUMERO_AQUI" target="_blank">
                   Agende Agora Mesmo o Seu Atendimento!
                 </Link>
@@ -166,6 +195,15 @@ export default function Home() {
               Por Que a Mooca Redes de Proteção É a Escolha Certa?
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
+              <Carousel>
+                <CarouselContent>
+                  <CarouselItem>...</CarouselItem>
+                  <CarouselItem>...</CarouselItem>
+                  <CarouselItem>...</CarouselItem>
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
               <Card>
                 <CardContent className="p-6">
                   <CreditCard className="w-12 h-12 mb-4 text-primary" />
@@ -212,8 +250,7 @@ export default function Home() {
             </p>
             <Button
               size="lg"
-              variant="secondary"
-              className="mb-8  bg-green-700 py-6"
+              className="mb-8 bg-gradient-to-r from-green-400 to-green-500 text-white px-6 py-3 rounded-lg transform transition duration-300 hover:scale-105 shadow-[0_0_10px_2px_rgba(34,197,94,0.7)] hover:shadow-[0_0_20px_5px_rgba(34,197,94,0.8)]"
             >
               <Link href="https://wa.me/SEU_NUMERO_AQUI" target="_blank">
                 Solicite um Orçamento Agora!
@@ -227,7 +264,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="fixed bottom-4 right-4 z-50 cursor-pointer hover:opacity-90 transition-opacity">
+        <div className="fixed bottom-4 right-4 z-50 cursor-pointer hover:opacity-90 hover:scale-110 transform transition duration-150">
           <Link href="https://wa.me/SEU_NUMERO_AQUI" target="_blank">
             <Image
               src="/images/whatsapp.png"
