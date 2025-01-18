@@ -1,3 +1,4 @@
+import CustomCarousel from "@/components/carousel/pages";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -187,48 +188,43 @@ export default function Home() {
             <h2 className="text-3xl font-bold mb-10 text-center">
               Por Que a Mooca Redes de Proteção É a Escolha Certa?
             </h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              {/* <Carousel>
-                <CarouselContent>
-                  <CarouselItem>...</CarouselItem>
-                  <CarouselItem>...</CarouselItem>
-                  <CarouselItem>...</CarouselItem>
-                </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
-              </Carousel> */}
-              <Card>
-                <CardContent className="p-6">
-                  <CreditCard className="w-12 h-12 mb-4 text-primary" />
-                  <h3 className="text-xl font-semibold mb-2">
-                    Pagamento Facilitado
-                  </h3>
-                  <p>
-                    Parcelamos no cartão de crédito para caber no seu orçamento.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="p-6">
-                  <Shield className="w-12 h-12 mb-4 text-primary" />
-                  <h3 className="text-xl font-semibold mb-2">
-                    Materiais de Alta Qualidade
-                  </h3>
-                  <p>
-                    Utilizamos redes certificadas para máxima resistência e
-                    durabilidade.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="p-6">
-                  <Tool className="w-12 h-12 mb-4 text-primary" />
-                  <h3 className="text-xl font-semibold mb-2">
-                    Atendimento Especializado
-                  </h3>
-                  <p>Equipe treinada para uma instalação rápida e segura.</p>
-                </CardContent>
-              </Card>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="flex flex-col gap-4">
+                <Card>
+                  <CardContent className="p-6">
+                    <CreditCard className="w-12 h-12 mb-4 text-primary" />
+                    <h3 className="text-xl font-semibold mb-2">
+                      Pagamento Facilitado
+                    </h3>
+                    <p>
+                      Parcelamos no cartão de crédito para caber no seu
+                      orçamento.
+                    </p>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardContent className="p-6">
+                    <Shield className="w-12 h-12 mb-4 text-primary" />
+                    <h3 className="text-xl font-semibold mb-2">
+                      Materiais de Alta Qualidade
+                    </h3>
+                    <p>
+                      Utilizamos redes certificadas para máxima resistência e
+                      durabilidade.
+                    </p>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardContent className="p-6">
+                    <Tool className="w-12 h-12 mb-4 text-primary" />
+                    <h3 className="text-xl font-semibold mb-2">
+                      Atendimento Especializado
+                    </h3>
+                    <p>Equipe treinada para uma instalação rápida e segura.</p>
+                  </CardContent>
+                </Card>
+              </div>
+              <CustomCarousel />
             </div>
           </div>
         </section>
