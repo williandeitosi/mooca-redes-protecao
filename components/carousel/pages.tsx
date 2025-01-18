@@ -52,7 +52,7 @@ const CustomCarousel = () => {
         {slides.map((slide, index) => (
           <div
             key={index}
-            className="min-w-full aspect-square md:h-full relative rounded-lg"
+            className="min-w-full aspect-square md:aspect-auto md:h-full relative rounded-lg"
           >
             <Image
               src={`/images/${slide}`}
