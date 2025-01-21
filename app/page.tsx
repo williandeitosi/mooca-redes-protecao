@@ -5,6 +5,7 @@ import {
   CheckCircle,
   CreditCard,
   MapPin,
+  PawPrint,
   Phone,
   Shield,
   Sparkles,
@@ -35,10 +36,10 @@ export default function Home() {
             priority
           />
 
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/100 transition-opacity" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/100 md:from-primary/85 transition-opacity" />
 
           <div className="relative z-10 py-20">
-            <div className="container  px-4 md:w-full">
+            <div className="container  px-4 md:w-1/2  md:ml-32">
               <h1 className="text-2xl md:text-5xl font-bold mb-4 text-white">
                 Proteção Garantida Para Janelas, Sacadas e Mais em São Paulo!
               </h1>
@@ -60,8 +61,8 @@ export default function Home() {
                   qualidade para janelas, sacadas, piscinas, e quadras.
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="mr-2 flex-shrink-0" /> Garantia de
-                  instalação segura e durável.
+                  <CheckCircle className="mr-2 flex-shrink-0" /> 5 anos de
+                  garantia no materia e instalação.
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="mr-2 flex-shrink-0" /> Atendimento
@@ -81,16 +82,17 @@ export default function Home() {
               Segurança e tranquilidade em todos os ambientes da sua casa ou
               empresa.
             </p>
-            <div className="grid md:grid-cols-3 gap-8">
-              <Card>
+            <div className="grid md:grid-cols-4 gap-8">
+              <Card className=" flex flex-col justify-between">
                 <CardContent className="p-6">
                   <Shield className="w-12 h-12 mb-4 text-primary" />
                   <h3 className="text-xl font-semibold mb-2">
-                    Proteção Completa
+                    Proteja Suas Crianças
                   </h3>
                   <p>
-                    Evite acidentes com crianças, pets ou objetos em janelas e
-                    sacadas.
+                    Evite acidentes domésticos e proteja quem você mais ama.
+                    Redes ideais para impedir quedas de crianças ou objetos de
+                    janelas e sacadas.
                   </p>
                 </CardContent>
                 <div className="relative w-full h-[200px]">
@@ -102,7 +104,7 @@ export default function Home() {
                   />
                 </div>
               </Card>
-              <Card>
+              <Card className=" flex flex-col justify-between">
                 <CardContent className="p-6">
                   <Tool className="w-12 h-12 mb-4 text-primary" />
                   <h3 className="text-xl font-semibold mb-2">Durabilidade</h3>
@@ -119,7 +121,7 @@ export default function Home() {
                   />
                 </div>
               </Card>
-              <Card>
+              <Card className=" flex flex-col justify-between">
                 <CardContent className="p-6">
                   <Sparkles className="w-12 h-12 mb-4 text-primary" />
                   <h3 className="text-xl font-semibold mb-2">
@@ -133,6 +135,27 @@ export default function Home() {
                 <div className="relative w-full h-[200px]">
                   <Image
                     src="/images/protecao-header.jpg"
+                    alt="criança"
+                    fill
+                    className="object-cover rounded-lg"
+                  />
+                </div>
+              </Card>
+              <Card className=" flex flex-col justify-between">
+                <CardContent className="p-6">
+                  <PawPrint className="w-12 h-12 mb-4 text-primary" />
+                  <h3 className="text-xl font-semibold mb-2">
+                    Proteção para Pets
+                  </h3>
+                  <p>
+                    Garanta a segurança dos seus pets de forma prática e
+                    confiável. Mantenha cães e gatos longe de perigos em janelas
+                    e varandas.
+                  </p>
+                </CardContent>
+                <div className="relative w-full h-[200px]">
+                  <Image
+                    src="/images/protecao-pets.jpg"
                     alt="criança"
                     fill
                     className="object-cover rounded-lg"
