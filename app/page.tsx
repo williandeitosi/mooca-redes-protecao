@@ -1,6 +1,9 @@
+"use client";
+
 import CustomCarousel from "@/components/carousel/pages";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import FloatingWhatsappIcon from "@/components/ui/IconWhatsAppButton";
+import WhatsappButton from "@/components/ui/WhatsappButton";
 import {
   CheckCircle,
   CreditCard,
@@ -51,12 +54,7 @@ export default function Home() {
                 )}`}
                 target="_blank"
               >
-                <Button
-                  size="lg"
-                  className="mb-6 bg-gradient-to-r from-green-400 to-green-500 text-white px-6 py-3 rounded-lg transform transition duration-300 hover:scale-105 shadow-[0_0_10px_2px_rgba(34,197,94,0.7)] hover:shadow-[0_0_20px_5px_rgba(34,197,94,0.8)]"
-                >
-                  Peça um Orçamento Agora
-                </Button>
+                <WhatsappButton label="Peça um Orçamento Agora" />
               </Link>
 
               <ul className="space-y-2 text-white mt-8 md:mt-0 text-md md:text-xl">
@@ -204,12 +202,7 @@ export default function Home() {
                 )}`}
                 target="_blank"
               >
-                <Button
-                  size="lg"
-                  className="bg-gradient-to-r from-green-400 to-green-500 text-white px-6 py-3 rounded-lg transform transition duration-300 hover:scale-105 shadow-[0_0_10px_2px_rgba(34,197,94,0.7)] hover:shadow-[0_0_20px_5px_rgba(34,197,94,0.8)]"
-                >
-                  Agende Agora Mesmo o Seu Atendimento!
-                </Button>
+                <WhatsappButton label="Agende Agora Mesmo o Seu Atendimento!" />
               </Link>
             </div>
           </div>
@@ -275,12 +268,7 @@ export default function Home() {
               )}`}
               target="_blank"
             >
-              <Button
-                size="lg"
-                className="mb-8 bg-gradient-to-r from-green-400 to-green-500 text-white px-6 py-3 rounded-lg transform transition duration-300 hover:scale-105 shadow-[0_0_10px_2px_rgba(34,197,94,0.7)] hover:shadow-[0_0_20px_5px_rgba(34,197,94,0.8)]"
-              >
-                Solicite um Orçamento Agora!
-              </Button>
+              <WhatsappButton label="Solicite um Orçamento Agora!" />
             </Link>
             <div className="flex justify-center items-center">
               <Shield className="w-12 h-12 mr-4" />
@@ -290,21 +278,8 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="fixed bottom-4 right-4 z-50 cursor-pointer hover:opacity-90 hover:scale-110 transform transition duration-150">
-          <Link
-            href={`https://wa.me/5511963403041?text=${encodeURIComponent(
-              "Encontrei você pelo site e estou entrando em contato para solicitar uma cotação"
-            )}`}
-            target="_blank"
-          >
-            <Image
-              src="/images/whatsapp.png"
-              alt="Fale conosco pelo WhatsApp"
-              width={60}
-              height={60}
-            />
-          </Link>
-        </div>
+        <FloatingWhatsappIcon />
+        <div className="fixed bottom-4 right-4 z-50 cursor-pointer hover:opacity-90 hover:scale-110 transform transition duration-150"></div>
       </main>
 
       <footer className="bg-zinc-200 py-6">
