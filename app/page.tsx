@@ -46,7 +46,9 @@ export default function Home() {
                 Mooca, Tatuapé, Perdizes e mais regiões da capital.
               </p>
               <Link
-                href="https://wa.me/5511963403041?text=Encontrei%20voc%C3%AA%20pelo%20site%20e%20estou%20entrando%20em%20contato%20para%20solicitar%20uma%20cotação"
+                href={`https://wa.me/5511963403041?text=${encodeURIComponent(
+                  "Encontrei você pelo site e estou entrando em contato para solicitar uma cotação"
+                )}`}
                 target="_blank"
               >
                 <Button
@@ -197,16 +199,16 @@ export default function Home() {
             </div>
             <div className="text-center">
               <Link
-                href="https://wa.me/5511963403041?text=Encontrei%20voc%C3%AA%20pelo%20site%20e%20estou%20entrando%20em%20contato%20para%20solicitar%20uma%20cotação"
+                href={`https://wa.me/5511963403041?text=${encodeURIComponent(
+                  "Encontrei você pelo site e estou entrando em contato para solicitar uma cotação"
+                )}`}
                 target="_blank"
               >
                 <Button
                   size="lg"
                   className="bg-gradient-to-r from-green-400 to-green-500 text-white px-6 py-3 rounded-lg transform transition duration-300 hover:scale-105 shadow-[0_0_10px_2px_rgba(34,197,94,0.7)] hover:shadow-[0_0_20px_5px_rgba(34,197,94,0.8)]"
                 >
-                  <Link href="https://wa.me/SEU_NUMERO_AQUI" target="_blank">
-                    Agende Agora Mesmo o Seu Atendimento!
-                  </Link>
+                  Agende Agora Mesmo o Seu Atendimento!
                 </Button>
               </Link>
             </div>
@@ -268,16 +270,16 @@ export default function Home() {
               A segurança que sua família merece está a um clique de distância.
             </p>
             <Link
-              href="https://wa.me/5511963403041?text=Encontrei%20voc%C3%AA%20pelo%20site%20e%20estou%20entrando%20em%20contato%20para%20solicitar%20uma%20cotação"
+              href={`https://wa.me/5511963403041?text=${encodeURIComponent(
+                "Encontrei você pelo site e estou entrando em contato para solicitar uma cotação"
+              )}`}
               target="_blank"
             >
               <Button
                 size="lg"
                 className="mb-8 bg-gradient-to-r from-green-400 to-green-500 text-white px-6 py-3 rounded-lg transform transition duration-300 hover:scale-105 shadow-[0_0_10px_2px_rgba(34,197,94,0.7)] hover:shadow-[0_0_20px_5px_rgba(34,197,94,0.8)]"
               >
-                <Link href="https://wa.me/SEU_NUMERO_AQUI" target="_blank">
-                  Solicite um Orçamento Agora!
-                </Link>
+                Solicite um Orçamento Agora!
               </Button>
             </Link>
             <div className="flex justify-center items-center">
@@ -290,7 +292,9 @@ export default function Home() {
         </section>
         <div className="fixed bottom-4 right-4 z-50 cursor-pointer hover:opacity-90 hover:scale-110 transform transition duration-150">
           <Link
-            href="https://wa.me/5511963403041?text=Encontrei%20voc%C3%AA%20pelo%20site%20e%20estou%20entrando%20em%20contato%20para%20solicitar%20uma%20cotação"
+            href={`https://wa.me/5511963403041?text=${encodeURIComponent(
+              "Encontrei você pelo site e estou entrando em contato para solicitar uma cotação"
+            )}`}
             target="_blank"
           >
             <Image
