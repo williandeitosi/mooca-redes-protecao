@@ -20,7 +20,7 @@ export default function Home() {
       <header className="bg-primary text-primary-foreground py-4">
         <div className="container mx-auto px-4">
           <h1 className="text-lg md:text-2xl font-semibold flex gap-3 items-center justify-center">
-            <Phone />
+            <Phone /> (11)96340-3041
           </h1>
         </div>
       </header>
