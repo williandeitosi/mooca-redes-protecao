@@ -66,7 +66,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="mr-2 flex-shrink-0" /> 5 anos de
-                  garantia no materia e instalação.
+                  garantia no material e instalação.
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="mr-2 flex-shrink-0" /> Atendimento
