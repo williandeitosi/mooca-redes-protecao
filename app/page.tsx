@@ -21,7 +21,6 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <h1 className="text-lg md:text-2xl font-semibold flex gap-3 items-center justify-center">
             <Phone />
-            (11)96340-3041
           </h1>
         </div>
       </header>
@@ -47,14 +46,18 @@ export default function Home() {
                 Instalação rápida, segura e com pagamento facilitado. Atendemos
                 Mooca, Tatuapé, Perdizes e mais regiões da capital.
               </p>
-              <Button
-                size="lg"
-                className="mb-6 bg-gradient-to-r from-green-400 to-green-500 text-white px-6 py-3 rounded-lg transform transition duration-300 hover:scale-105 shadow-[0_0_10px_2px_rgba(34,197,94,0.7)] hover:shadow-[0_0_20px_5px_rgba(34,197,94,0.8)] "
+              <Link
+                href="https://wa.me/5511963403041?text=Encontrei%20voc%C3%AA%20pelo%20site%20e%20estou%20entrando%20em%20contato%20para%20solicitar%20uma%20cotação"
+                target="_blank"
               >
-                <Link href="https://wa.me/SEU_NUMERO_AQUI" target="_blank">
+                <Button
+                  size="lg"
+                  className="mb-6 bg-gradient-to-r from-green-400 to-green-500 text-white px-6 py-3 rounded-lg transform transition duration-300 hover:scale-105 shadow-[0_0_10px_2px_rgba(34,197,94,0.7)] hover:shadow-[0_0_20px_5px_rgba(34,197,94,0.8)]"
+                >
                   Peça um Orçamento Agora
-                </Link>
-              </Button>
+                </Button>
+              </Link>
+
               <ul className="space-y-2 text-white mt-8 md:mt-0 text-md md:text-xl">
                 <li className="flex items-center">
                   <CheckCircle className="mr-2 flex-shrink-0" /> Redes de alta
@@ -194,14 +197,19 @@ export default function Home() {
               ))}
             </div>
             <div className="text-center">
-              <Button
-                size="lg"
-                className="bg-gradient-to-r from-green-400 to-green-500 text-white px-6 py-3 rounded-lg transform transition duration-300 hover:scale-105 shadow-[0_0_10px_2px_rgba(34,197,94,0.7)] hover:shadow-[0_0_20px_5px_rgba(34,197,94,0.8)]"
+              <Link
+                href="https://wa.me/5511963403041?text=Encontrei%20voc%C3%AA%20pelo%20site%20e%20estou%20entrando%20em%20contato%20para%20solicitar%20uma%20cotação"
+                target="_blank"
               >
-                <Link href="https://wa.me/SEU_NUMERO_AQUI" target="_blank">
-                  Agende Agora Mesmo o Seu Atendimento!
-                </Link>
-              </Button>
+                <Button
+                  size="lg"
+                  className="bg-gradient-to-r from-green-400 to-green-500 text-white px-6 py-3 rounded-lg transform transition duration-300 hover:scale-105 shadow-[0_0_10px_2px_rgba(34,197,94,0.7)] hover:shadow-[0_0_20px_5px_rgba(34,197,94,0.8)]"
+                >
+                  <Link href="https://wa.me/SEU_NUMERO_AQUI" target="_blank">
+                    Agende Agora Mesmo o Seu Atendimento!
+                  </Link>
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
@@ -260,14 +268,19 @@ export default function Home() {
             <p className="text-xl mb-8">
               A segurança que sua família merece está a um clique de distância.
             </p>
-            <Button
-              size="lg"
-              className="mb-8 bg-gradient-to-r from-green-400 to-green-500 text-white px-6 py-3 rounded-lg transform transition duration-300 hover:scale-105 shadow-[0_0_10px_2px_rgba(34,197,94,0.7)] hover:shadow-[0_0_20px_5px_rgba(34,197,94,0.8)]"
+            <Link
+              href="https://wa.me/5511963403041?text=Encontrei%20voc%C3%AA%20pelo%20site%20e%20estou%20entrando%20em%20contato%20para%20solicitar%20uma%20cotação"
+              target="_blank"
             >
-              <Link href="https://wa.me/SEU_NUMERO_AQUI" target="_blank">
-                Solicite um Orçamento Agora!
-              </Link>
-            </Button>
+              <Button
+                size="lg"
+                className="mb-8 bg-gradient-to-r from-green-400 to-green-500 text-white px-6 py-3 rounded-lg transform transition duration-300 hover:scale-105 shadow-[0_0_10px_2px_rgba(34,197,94,0.7)] hover:shadow-[0_0_20px_5px_rgba(34,197,94,0.8)]"
+              >
+                <Link href="https://wa.me/SEU_NUMERO_AQUI" target="_blank">
+                  Solicite um Orçamento Agora!
+                </Link>
+              </Button>
+            </Link>
             <div className="flex justify-center items-center">
               <Shield className="w-12 h-12 mr-4" />
               <p className="text-lg font-semibold">
@@ -277,7 +290,10 @@ export default function Home() {
           </div>
         </section>
         <div className="fixed bottom-4 right-4 z-50 cursor-pointer hover:opacity-90 hover:scale-110 transform transition duration-150">
-          <Link href="https://wa.me/SEU_NUMERO_AQUI" target="_blank">
+          <Link
+            href="https://wa.me/5511963403041?text=Encontrei%20voc%C3%AA%20pelo%20site%20e%20estou%20entrando%20em%20contato%20para%20solicitar%20uma%20cotação"
+            target="_blank"
+          >
             <Image
               src="/images/whatsapp.png"
               alt="Fale conosco pelo WhatsApp"
