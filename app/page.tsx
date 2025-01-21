@@ -32,7 +32,6 @@ export default function Home() {
             alt="image header"
             fill
             className="object-cover"
-            priority
           />
 
           <div className="absolute inset-0 bg-gradient-to-r from-primary/100 md:from-primary/85 transition-opacity" />
@@ -299,7 +298,6 @@ export default function Home() {
               alt="Fale conosco pelo WhatsApp"
               width={60}
               height={60}
-              priority
             />
           </Link>
         </div>
