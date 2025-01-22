@@ -15,7 +15,7 @@ export default function WhatsappButton({ label }: WhatsappButtonProps) {
     handleWhatsAppClick(label);
 
     window.open(
-      `https://wa.me/5511963403041?text=${encodeURIComponent(
+      `https://wa.me/5511971423779?text=${encodeURIComponent(
         "Encontrei você pelo site e estou entrando em contato para solicitar uma cotação"
       )}`,
       "_blank"

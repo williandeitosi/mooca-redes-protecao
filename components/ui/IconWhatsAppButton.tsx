@@ -14,7 +14,7 @@ export default function FloatingWhatsappIcon() {
     handleWhatsAppClick("Contato via WhatsApp (ícone flutuante)");
 
     window.open(
-      `https://wa.me/5511963403041?text=${encodeURIComponent(
+      `https://wa.me/5511971423779?text=${encodeURIComponent(
         "Encontrei você pelo site e estou entrando em contato para solicitar uma cotação"
       )}`,
       "_blank"
