@@ -40,7 +40,8 @@ export default function Home() {
           <div className="relative z-10 py-20">
             <div className="container  px-4 md:w-1/2  md:ml-32">
               <h1 className="text-2xl md:text-5xl font-bold mb-4 text-white">
-                Proteção Garantida Para Janelas, Sacadas e Mais em São Paulo!
+                Proteção Garantida Para Janelas, Sacadas e Mais em São Paulo e
+                ABC!
               </h1>
               <p className="text-md md:text-xl mb-6 text-white">
                 Instalação rápida, segura e com pagamento facilitado. Atendemos
@@ -66,7 +67,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="mr-2 flex-shrink-0" /> Atendimento
-                  ágil em toda a região de São Paulo.
+                  ágil em toda a região de São Paulo e ABC.
                 </li>
               </ul>
             </div>
@@ -176,6 +177,11 @@ export default function Home() {
             </p>
             <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
               {[
+                "Santo André",
+                "Diadema",
+                "São Bernardo do Campo",
+                "São Caetano",
+                "Mauá",
                 "Mooca",
                 "Vila Alpina",
                 "Vila Prudente",
