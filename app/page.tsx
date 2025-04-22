@@ -37,8 +37,8 @@ export default function Home() {
 
           <div className="absolute inset-0 bg-gradient-to-r from-primary/100 md:from-primary/85 transition-opacity" />
 
-          <div className="relative z-10 py-10">
-            <div className="container px-4 md:mx-auto">
+          <div className="relative z-10 py-10 w-full">
+            <div className="px-4 mx-auto md:mx-12 ">
               <div className="flex justify-center md:justify-start">
                 <div className="relative w-20 h-20 mb-4 md:mb-0 md:w-28 md:h-28">
                   <Image
@@ -67,7 +67,7 @@ export default function Home() {
                     )}`}
                     target="_blank"
                   >
-                    <WhatsappButton label="Peça um Orçamento Agora" />
+                    <WhatsappButton label="Orçamento via WhatsApp" />
                   </Link>
 
                   <ul className="space-y-2 text-white mt-8 md:mt-0 text-md md:text-xl">
@@ -82,7 +82,7 @@ export default function Home() {
                 </div>
 
                 <div className="w-full md:w-1/3 md:mt-0">
-                  <div className="relative aspect-square w-full">
+                  <div className="relative aspect-square ">
                     <Image
                       src="/images/durabilidade.jpg"
                       alt="Redes de proteção"
