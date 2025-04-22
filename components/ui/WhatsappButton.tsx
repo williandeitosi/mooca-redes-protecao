@@ -30,7 +30,7 @@ export default function WhatsappButton({ label }: WhatsappButtonProps) {
     <Button
       onClick={handleClick}
       size="lg"
-      className="mb-6 bg-gradient-to-r from-green-400 to-green-500 text-white px-6 py-3 rounded-lg transform transition duration-300 hover:scale-105 shadow-[0_0_10px_2px_rgba(34,197,94,0.7)] hover:shadow-[0_0_20px_5px_rgba(34,197,94,0.8)]"
+      className="lg:h-14 lg:w-1/2 mb-6 lg:text-lg bg-gradient-to-r from-green-400 to-green-500 text-white px-6 py-3 rounded-lg transform transition duration-300 hover:scale-105 shadow-[0_0_10px_2px_rgba(34,197,94,0.7)] hover:shadow-[0_0_20px_5px_rgba(34,197,94,0.8)]"
     >
       {label}
     </Button>

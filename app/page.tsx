@@ -3,13 +3,13 @@ import { Card, CardContent } from "@/components/ui/card";
 import FloatingWhatsappIcon from "@/components/ui/IconWhatsAppButton";
 import WhatsappButton from "@/components/ui/WhatsappButton";
 import {
-  CheckCircle,
   CreditCard,
   MapPin,
   PawPrint,
   Phone,
   Shield,
   Sparkles,
+  Star,
   PenToolIcon as Tool,
 } from "lucide-react";
 import Image from "next/image";
@@ -37,39 +37,61 @@ export default function Home() {
 
           <div className="absolute inset-0 bg-gradient-to-r from-primary/100 md:from-primary/85 transition-opacity" />
 
-          <div className="relative z-10 py-20">
-            <div className="container  px-4 md:w-1/2  md:ml-32">
-              <h1 className="text-2xl md:text-5xl font-bold mb-4 text-white">
-                Proteção Garantida Para Janelas, Sacadas e Mais em São Paulo e
-                ABC!
-              </h1>
-              <p className="text-md md:text-xl mb-6 text-white">
-                Instalação rápida, segura e com pagamento facilitado. Atendemos
-                Mooca, Tatuapé, Perdizes e mais regiões da capital.
-              </p>
-              <Link
-                href={`https://wa.me/5511963403041?text=${encodeURIComponent(
-                  "Encontrei você pelo site e estou entrando em contato para solicitar uma cotação"
-                )}`}
-                target="_blank"
-              >
-                <WhatsappButton label="Peça um Orçamento Agora" />
-              </Link>
+          <div className="relative z-10 py-10">
+            <div className="container px-4 md:mx-auto">
+              <div className="flex justify-center md:justify-start">
+                <div className="relative w-20 h-20 mb-4 md:mb-0 md:w-28 md:h-28">
+                  <Image
+                    src="/images/mooca-branco-removebg-preview.png"
+                    alt="Logo"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              </div>
 
-              <ul className="space-y-2 text-white mt-8 md:mt-0 text-md md:text-xl">
-                <li className="flex items-center">
-                  <CheckCircle className="mr-2 flex-shrink-0" /> Redes de alta
-                  qualidade para janelas, sacadas, piscinas, e quadras.
-                </li>
-                <li className="flex items-center">
-                  <CheckCircle className="mr-2 flex-shrink-0" /> 5 anos de
-                  garantia no material e instalação.
-                </li>
-                <li className="flex items-center">
-                  <CheckCircle className="mr-2 flex-shrink-0" /> Atendimento
-                  ágil em toda a região de São Paulo e ABC.
-                </li>
-              </ul>
+              <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+                <div className="w-full md:w-1/2">
+                  <h1 className="text-2xl md:text-5xl mb-4 text-white">
+                    <strong>Redes de Proteção</strong> para garantir a segurança
+                    das suas crianças e pets
+                  </h1>
+
+                  <p className="text-md md:text-2xl mb-6 text-white">
+                    Atendemos <strong>São Paulo Capital e ABC Paulista</strong>
+                  </p>
+
+                  <Link
+                    href={`https://wa.me/5511963403041?text=${encodeURIComponent(
+                      "Encontrei você pelo site e estou entrando em contato para solicitar uma cotação"
+                    )}`}
+                    target="_blank"
+                  >
+                    <WhatsappButton label="Peça um Orçamento Agora" />
+                  </Link>
+
+                  <ul className="space-y-2 text-white mt-8 md:mt-0 text-md md:text-xl">
+                    <li className="flex items-center">
+                      <Star className="mr-2 flex-shrink-0" />{" "}
+                      <p>
+                        <strong>5 anos de garantia</strong> no material e
+                        instalação
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="w-full md:w-1/3 md:mt-0">
+                  <div className="relative aspect-square w-full">
+                    <Image
+                      src="/images/durabilidade.jpg"
+                      alt="Redes de proteção"
+                      fill
+                      className="rounded-md object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
