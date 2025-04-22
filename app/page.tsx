@@ -228,7 +228,7 @@ export default function Home() {
                 )}`}
                 target="_blank"
               >
-                <WhatsappButton label="Agende Agora Mesmo o Seu Atendimento!" />
+                <WhatsappButton label="Orçamento via WhatsApp" />
               </Link>
             </div>
           </div>
