@@ -190,21 +190,19 @@ export default function Home() {
         </section>
 
         <section className="bg-zinc-200 py-20">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 flex flex-col justify-center">
             <h2 className="text-3xl font-bold mb-4 text-center">
               Estamos Perto de Você!
             </h2>
             <p className="text-xl mb-10 text-center">
               Atendemos com agilidade nas principais regiões de São Paulo.
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-6 mb-12 max-w-4xl mx-auto w-full">
               {[
                 "Santo André",
                 "Diadema",
                 "São Bernardo do Campo",
                 "São Caetano",
-                "Mauá",
-                "Mooca",
                 "Vila Alpina",
                 "Vila Prudente",
                 "Tatuapé",
@@ -213,10 +211,14 @@ export default function Home() {
                 "Morumbi",
                 "Itaim Bibi",
                 "Lapa",
+                "Mooca",
                 "Região Central",
+                "Mauá",
               ].map((region) => (
-                <div key={region} className="flex items-center">
-                  <MapPin className="mr-2 text-primary" />
+                <div key={region} className="flex  items-center">
+                  <div className="w-6 mr-2 flex-shrink-0 flex justify-center">
+                    <MapPin className="text-primary" />
+                  </div>
                   <span>{region}</span>
                 </div>
               ))}
